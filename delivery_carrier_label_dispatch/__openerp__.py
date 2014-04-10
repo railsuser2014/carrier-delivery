@@ -50,7 +50,6 @@ gain speed.
 Be careful not to set too many worker as each one will need to instanciate
 a cursor on database and this could generate PoolErrors.
 A good choice would be to set it as `db_maxconn` / number_of_worker / 2
->>>>>>> MERGE-SOURCE
 
 Contributors
 ------------
