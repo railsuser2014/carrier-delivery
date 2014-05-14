@@ -20,7 +20,6 @@
 ##############################################################################
 from operator import attrgetter
 from itertools import groupby
-import sys
 import Queue
 import threading
 import logging
