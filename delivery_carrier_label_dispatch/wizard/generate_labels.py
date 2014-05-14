@@ -93,7 +93,7 @@ class DeliveryCarrierLabelGenerate(orm.TransientModel):
         return label_obj.browse(cr, uid, label_id[0], context=context)
 
     def _do_generate_labels(self, cr, uid, wizard, pack, picking,
-                                  label, context=None):
+                            label, context=None):
         """ Generate a label in a thread safe context
 
         Here we declare a specific cursor so do not launch
@@ -153,9 +153,7 @@ class DeliveryCarrierLabelGenerate(orm.TransientModel):
             return 1
         return int(num_workers)
 
-
     def _get_all_pdf(self, cr, uid, wizard, dispatch, context=None):
-
         q = Queue.Queue()
         q_except = Queue.Queue()
 
@@ -164,8 +162,8 @@ class DeliveryCarrierLabelGenerate(orm.TransientModel):
                                                   context=context):
             if not label or wizard.generate_new_labels:
                 picking = moves[0].picking_id
-                args=(cr, uid, wizard, pack, picking, label)
-                kwargs={'context': context}
+                args = (cr, uid, wizard, pack, picking, label)
+                kwargs = {'context': context}
                 task = (args, kwargs)
                 q.put(task)
 
@@ -212,7 +210,8 @@ class DeliveryCarrierLabelGenerate(orm.TransientModel):
 
         # create a new cursor to be up to date with what was created by workers
         join_cr = pooler.get_db(cr.dbname).cursor()
-        for pack, moves, label in self._get_packs(join_cr, uid, wizard, dispatch,
+        for pack, moves, label in self._get_packs(join_cr, uid,
+                                                  wizard, dispatch,
                                                   context=context):
             picking = moves[0].picking_id
             if pack:
