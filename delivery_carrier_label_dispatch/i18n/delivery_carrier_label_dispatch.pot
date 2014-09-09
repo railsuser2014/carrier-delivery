@@ -122,7 +122,7 @@ msgstr ""
 #. module: delivery_carrier_label_dispatch
 #: view:picking.dispatch:0
 #: view:picking.dispatch.apply.carrier:0
-msgid "Warning, setting options will erase existing ones in pickings"
+msgid "Warning, setting options will erase the existing ones in delivery orders"
 msgstr ""
 
 #. module: delivery_carrier_label_dispatch
