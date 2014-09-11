@@ -1,15 +1,16 @@
 # Translation of OpenERP Server.
 # This file contains the translation of the following modules:
-#	* delivery_carrier_label_dispatch
+# 	* delivery_carrier_label_dispatch
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenERP Server 7.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-10 14:03+0000\n"
-"PO-Revision-Date: 2014-04-10 14:03+0000\n"
+"PO-Revision-Date: 2014-09-09 12:11+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -66,14 +67,15 @@ msgstr ""
 
 #. module: delivery_carrier_label_dispatch
 #: help:delivery.carrier.label.generate,generate_new_labels:0
-msgid "If this option is used, new labels will be generated for the packs even if they already have one.\n"
+msgid ""
+"If this option is used, new labels will be generated for the packs even if "
+"they already have one.\n"
 "The default is to use the existing label."
 msgstr ""
 
 #. module: delivery_carrier_label_dispatch
 #: model:ir.model.fields,field_description:delivery_carrier_label_dispatch.field_picking_dispatch_option_ids
-#: view:picking.dispatch:0
-#: field:picking.dispatch,option_ids:0
+#: view:picking.dispatch:0 field:picking.dispatch,option_ids:0
 msgid "Options"
 msgstr ""
 
@@ -97,7 +99,9 @@ msgstr ""
 
 #. module: delivery_carrier_label_dispatch
 #: view:delivery.carrier.label.generate:0
-msgid "This wizard creates an attachement on each selected dispatch containing picking labels"
+msgid ""
+"This wizard creates an attachement on each selected dispatch containing "
+"picking labels"
 msgstr ""
 
 #. module: delivery_carrier_label_dispatch
@@ -116,4 +120,3 @@ msgstr ""
 #: view:delivery.carrier.label.generate:0
 msgid "or"
 msgstr ""
-
